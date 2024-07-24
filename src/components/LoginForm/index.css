@@ -1,0 +1,64 @@
+/* Write your CSS code here */
+.login-form-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.website-login {
+  width: 40%;
+}
+.form-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px 10px #d7dfe9;
+  height: 300px;
+}
+
+.website-logo {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.input-con {
+  width: 100%;
+  margin-top: 10px;
+}
+.label {
+  align-self: flex-start;
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: #475569;
+  margin-top: 20px;
+}
+
+.input-el {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  color: #475569;
+  background-color: #d7dfe9;
+  border: none;
+  margin-top: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+.login-btn {
+  width: 100%;
+  background-color: #0b69ff;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  height: 40px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
