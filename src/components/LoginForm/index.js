@@ -4,7 +4,7 @@ import {Component} from 'react'
 import './index.css'
 
 class LoginForm extends Component {
-  state = {username: '', password: ''}
+  state = {username: '', password: '', errMsg: ''}
 
   onSubmitSuccess = () => {
     const {history} = this.props
@@ -26,6 +26,10 @@ class LoginForm extends Component {
     const data = await response.json()
     if (response.ok) {
       this.onSubmitSuccess()
+      console.log(data)
+    } else {
+      console.log(data)
+      this.setState({errMsg: data.error_msg})
     }
   }
 
@@ -38,6 +42,8 @@ class LoginForm extends Component {
   }
 
   render() {
+    const {errMsg} = this.state
+    const errorMessage = errMsg !== '' && errMsg
     return (
       <div className="login-form-con">
         <img
@@ -82,6 +88,7 @@ class LoginForm extends Component {
           <button className="login-btn" type="submit">
             Login
           </button>
+          <p className="err-msg">{errorMessage}</p>
         </form>
       </div>
     )

@@ -1,1 +1,45 @@
 /* Write your CSS code here */
+
+.nav-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+.nav-logo {
+  width: 200px;
+}
+
+.nav-ul {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-li {
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.anchor {
+}
+
+.normal-btn {
+  border: none;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.blue-bg-btn {
+  background-color: #0967d2;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 20px;
+}
